@@ -1,0 +1,81 @@
+body {
+  background-image: url("classroom_bg.jpg");
+  background-size: cover;
+  font-family: "Fredericka the Great", cursive;
+  font-weight: bold;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  letter-spacing: 2px;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.overlay + * {
+  position: relative;
+  z-index: 1;
+}
+
+.container {
+  color: yellow;
+  max-width: 800px;
+  margin-inline: auto;
+
+  border: 5px solid black;
+  background-color: rgb(42, 20, 11);
+
+  padding: 4em;
+  border-radius: 10px;
+}
+
+h1 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 50px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+button {
+  transition: transform 0.25s;
+  border: none;
+  font-size: 2rem;
+  display: inline-flex;
+  justify-content: center;
+
+  padding: 0.5em;
+
+  font-weight: bold;
+  width: 80px;
+  margin-bottom: 5px;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  margin-top: 20px;
+  border: 2px solid white;
+}
+
+#increment-btn {
+  background: skyblue;
+  color: rgb(42, 20, 11);
+}
+
+#increment-btn:hover,
+#increment-btn:focus,
+#save-btn:hover,
+#save-btn:focus {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+#save-btn {
+  background: pink;
+  margin-left: 10px;
+}
